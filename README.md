@@ -18,16 +18,18 @@ npm run dev
 
 Will run on `localhost:3000`
 
-## Build
+## Build (on Production)
 
 ```
 npm run build
 ```
 
-## Serve
+## Serve (on Production)
 
 ```
-node server.js
+npm run start
 ```
 
-This will run after `npm install` 
+## Ready for Heroku
+
+This will run on a Heroku app, just run `heroku create` and then `git push heroku master` to deploy. The app will run `npm run build` and `node server.js` on the server, which bundles the app and starts our Express server, without React hotloading. 
